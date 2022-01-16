@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 2px 1px 14px -4px rgba(0, 0, 0, 1);
+}
+
+.logo {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.nav-info {
+  color: grey;
+}
+
+@media only screen and (max-width: 380px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-info {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
